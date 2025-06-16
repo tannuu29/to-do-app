@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const emptyImg = document.querySelector('.empty-img');
     const todosContainer = document.querySelector('.todos-container')
     const progress = document.getElementById('progress');
-    const progressNumbers = document.getElementById('numbers')
+    const progressNumbers = document.getElementById('numbers');
+    const clearAll = document.getElementById("clear-all");
 
 
     const toggleEmptyState = () => {
@@ -91,6 +92,12 @@ document.addEventListener('DOMContentLoaded', () => {
             updateProgress();
             saveTaskToLocalStorage();
         });
+
+        clearAll.addEventListener("click", function () {
+                taskList.innerHTML = "";
+                localStorage.removeItem(newTask); 
+        });
+
 
         taskList.appendChild(newTask);
         taskInput.value = "";

@@ -249,6 +249,22 @@ ul {
     background-color: rgb(247, 90, 90);
 }
 
+#clear-all {
+  background-color: rgb(175, 97, 111);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#clear-all:hover {
+  background-color: rgb(201, 40, 40);
+}
+
+
 
 /* media Queries */
 @media (max-width: 768px) {
