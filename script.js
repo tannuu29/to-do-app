@@ -95,6 +95,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         clearAll.addEventListener("click", function () {
                 taskList.innerHTML = "";
+                toggleEmptyState();
+                updateProgress();
                 localStorage.removeItem(newTask); 
         });
 
